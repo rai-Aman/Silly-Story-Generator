@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link href="main.css" rel="stylesheet" type="text/css" />
+
+    <title>Silly story generator</title>
+    <style>
+        /* body{
+            margin: 0px;
+            box-sizing: border-box;
+            align-items: center;
+        } */
+         #silly{
+            margin-left: 40%;
+        
+        }
+        .randomTextGenerator{
+            display: flex;
+            background-color: rgb(160, 182, 207);
+            font-size: 20px;
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 20px;
+            border: 2px solid black;
+            padding-left: 30px;
+            padding-top: 20px;
+            justify-content: space-around;
+        }
+        #randomize{
+            box-sizing: border-box;
+            border: 2px solid black;
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+    <div class="sillystory">
+            <h1 id="silly">Silly Story Generator</h1>
+    </div>
+
+    <div class="randomTextGenerator">
+        <div>
+            <label for="yourName">Enter custom name:</label>
+            <input id="yourName" type="text" placeholder="Enter any thing here">
+        </div>
+        <div>
+            <label> United State of America</label><input id="usa" type="radio" name="country" value="usa" checked> <br><br><br>
+            
+            <label>United Kingdom</label><input id="London" type="radio" name="country" value="London">
+        </div>
+        <div>
+            <button id="randomize"> Click to Generate random story</button>
+        </div>
+        <p id="story"></p>
+    </div>
+    <script src="silly-story-generator.js"></script>
+</body>
+
+</html>
